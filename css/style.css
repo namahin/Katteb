@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+html,
+body {}
+
+.container {
+    max-width: 1300px;
+}
+
+.sec-title {}
+
+.sec-title h2,
+.sec-title h3 {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 52px;
+    color: #2d2d2de6;
+    margin-bottom: 20px;
+}
+
+.sec-title h4 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 52px;
+    color: #2d2d2de6;
+}
+
+.sec-title p {}
+
+.hero-sec {
+    background-image: url(../images/hero-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-content h1 {}
+
+.hero-content h3 {}
+
+.hero-content p {}
+
+.hero-content form {}
+
+.hero-content .sign-up-form {}
+
+.hero-content .sign-up-form input {}
+
+.hero-content .sign-up-form button {}
+
+.hero-content form label {}
+
+.video-watch-button:hover .text {
+    color: #10AC84;
+    transition: linear .2s;
+}
+
+.video-watch-button .icon {
+    position: relative;
+    margin-right: 20px;
+    margin-left: 10px
+}
+
+.video-watch-button .icon::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    -webkit-animation: pulse-border 1500ms ease-out infinite;
+    animation: pulse-border 1500ms ease-out infinite;
+}
+
+.video-watch-button .icon::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    transition: all 200ms;
+}
+
+.video-watch-button .icon svg {}
+
+@-webkit-keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+    }
+}
+
+.counter-sec {}
+
+.counter-sec .soft-src {}
+
+.counter-sec .soft-src img {
+    border-radius: 10px;
+}
+
+.counter-content {}
+
+.counter-num {}
+
+.counter-title {}
+
+.counter-icon {}
+
+.counter-icon ul {}
+
+.counter-icon ul li {}
+
+.counter-icon ul li span {}
+
+.counter-icon ul li span path {}
+
+.sec-process {}
+
+.process {}
+
+.process.process-1 {}
+
+.process.process-2 {}
+
+.process.process-3 {}
+
+.process-content {}
+
+.process-content.process-1-content {}
+
+.process-content.process-2-content {}
+
+.process-content.process-3-content {}
+
+.process-content h3 {}
+
+.process-content p {}
+
+.process-img-1 {}
+
+.process-img-1 img {}
+
+.process-img-2 {}
+
+.process-img-2 img {}
+
+.process-img-3 {}
+
+.process-img-3 img {}
+
+.process-img-4 {}
+
+.process-img-4 img {}
+
+.process-img-5 {}
+
+.process-img-5 img {}
+
+.sec-working {}
+
+.sec-working .sec-title {}
+
+.sec-working a.btn-theme {}
+
+.working-card {}
+
+.working-card.working-card-1 {}
+
+.working-card.working-card-2 {}
+
+.working-card.working-card-3 {}
+
+.working-card .card-title {}
+
+.working-card .card-title .icon {}
+
+.working-card .card-title .text {}
+
+.working-card p {}
+
+.working-card.working-card-2 .card-title .icon {}
+
+.working-card.working-card-3 .card-title .icon {}
+
+.sec-blog-outline {}
+
+.blog-outline-img {}
+
+.blog-outline-img .img-1 {}
+
+.blog-outline-img .img-1 img {}
+
+.blog-outline-img .img-2 {}
+
+.blog-outline-img .img-2 img {}
+
+.blog-outline-content {}
+
+.blog-outline-content .sec-title {}
+
+.blog-outline-content ul {}
+
+.blog-outline-content ul li {}
+
+.blog-outline-content a.btn-theme {}
+
+.sec-products {}
+
+.products-content {}
+
+.products-content .sec-title {}
+
+.products-content a.btn-theme {}
+
+.sec-paraphrasing {}
+
+.paraphrasing-content {}
+
+.paraphrasing-content .sec-title {}
+
+.paraphrasing-content .accordion {}
+
+.paraphrasing-content .accordion .accordion-header {}
+
+.paraphrasing-content .accordion .accordion-button {}
+
+.paraphrasing-content .accordion .accordion-button .num {}
+
+.paraphrasing-content .accordion .accordion-button .text {}
+
+.paraphrasing-content .accordion .accordion-button img {}
+
+.paraphrasing-content a.btn-theme {}
+
+.sec-help {}
+
+.help-content {}
+
+.help-content h2 {}
+
+.help-content p {}
+
+.help-content img {}
+
+.sec-testimonial {}
+
+.testimonial-content {}
+
+.testimonial-content .sec-title {}
+
+.testimonial-content .sec-title h2 {}
+
+#carouselTestimonial {}
+
+#carouselTestimonial .carousel-inner {}
+
+#carouselTestimonial .carousel-item {}
+
+#carouselTestimonial .carousel-block {}
+
+#carouselTestimonial .client-pic {}
+
+#carouselTestimonial .client-pic img {}
+
+#carouselTestimonial .client-feedback {}
+
+#carouselTestimonial .client-feedback h3 {}
+
+#carouselTestimonial .client-feedback p {}
+
+#carouselTestimonial .client-bio {}
+
+#carouselTestimonial .client-bio h4 {}
+
+#carouselTestimonial .client-bio p {}
+
+#carouselTestimonial .carousel-control-prev {}
+
+#carouselTestimonial .carousel-control-prev img {}
+
+#carouselTestimonial .carousel-control-next {}
+
+#carouselTestimonial .carousel-control-next img {}
+
+.sec-blog {}
+
+.sec-blog .sec-title {}
+
+.highlight-post {}
+
+.highlight-post img {}
+
+.highlight-post h3 {}
+
+.highlight-post a {}
+
+.post-card {}
+
+.post-card h2 {}
+
+.post-card a {}
+
+.post-card.post-card-1 {}
+
+.post-card.post-card-2 {}
+
+.post-card.post-card-3 {}
