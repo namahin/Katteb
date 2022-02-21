@@ -7,7 +7,7 @@
 
 body,
 html {
-    /* overflow-x: hidden */
+    overflow-x: hidden
 }
 
 h1,
@@ -1612,8 +1612,6 @@ footer {
     line-height: 26px;
     color: #b8b8b8
 }
-
-.video-modal {}
 
 .video-modal .btn-close {
     background-color: #FFF;
