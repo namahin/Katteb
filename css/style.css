@@ -982,6 +982,22 @@ header .navigation ul {
     padding: 68px 0;
 }
 
+.products-bg {
+    background-image: url(../images/products-demo-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    text-align: right;
+}
+
+.products-bg img {
+    box-shadow: 10px 14px 54px -12px #7f957f24;
+    border-radius: 10px;
+    max-width: 230px;
+    margin-right: 95px;
+    margin-top: 30px;
+}
+
 .products-content {}
 
 .products-content .sec-title {
