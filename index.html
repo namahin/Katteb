@@ -31,7 +31,7 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse navigation" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#">Home</a>
@@ -43,15 +43,39 @@
                                 Templates
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
+                                <li><a href="#">Templates 01</a></li>
+                                <li><a href="#">Templates 02</a></li>
+                                <li><a href="#">Templates 03</a></li>
+                                <li><a href="#">Templates 04</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Blogs</a></li>
-                        <li class="nav-item nav-btn"><a class="nav-link" href="#">Login</a></li>
+                        <li class="nav-item">
+                            <div class="select-box nav-link">
+                                <div class="sb-current" tabindex="1">
+                                    <div class="sb-value">
+                                        <input class="sb-input" type="radio" id="en" value="English" name="Lang"
+                                            checked="checked" />
+                                        <p class="sb-input-text"><img src="images/en.jpg" alt="English">English</p>
+                                    </div>
+                                    <div class="sb-value">
+                                        <input class="sb-input" type="radio" id="ar" value="Arabic" name="Lang" />
+                                        <p class="sb-input-text"><img src="images/ar.jpg" alt="Arabic">Arabic</p>
+                                    </div>
+
+                                    <img class="select-box__icon" src="images/arrow-down.svg" alt="Arrow Icon"
+                                        aria-hidden="true" /><!-- -->
+                                </div>
+                                <ul class="sb-list">
+                                    <li><label class="sb-option" for="en" aria-hidden="aria-hidden"><img
+                                                src="images/en.jpg" alt="English">English</label></li>
+                                    <li><label class="sb-option" for="ar" aria-hidden="aria-hidden"><img
+                                                src="images/ar.jpg" alt="Arabic">Arabic</label></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
                         <li class="nav-item nav-btn"><a class="nav-link" href="#">SIGN UP</a></li>
                     </ul>
                 </div>
@@ -67,7 +91,8 @@
                 <div class="hero-content">
                     <h1 class="wow fadeInUp">AI Copywriting With 1-Click</h1>
                     <h3 class="wow fadeInUp">Creating quality, relevant, and accurate content in minutes!</h3>
-                    <p> class="wow fadeInUp"Katteb is a content generation platform that uses state-of-the-art artificial
+                    <p class="wow fadeInUp">Katteb is a content generation platform that uses state-of-the-art
+                        artificial
                         intelligence to generate content from just a headline</p>
                     <form>
                         <div class="sign-up-form">
@@ -101,20 +126,54 @@
         <section class="counter-sec">
             <div class="container">
                 <div class="soft-src">
+                    <div class="review-card">
+                        <div class="icon"><img src="images/Subtract.svg" alt="Subtract"></div>
+                        <div class="text">
+                            <h4>Content</h4>
+                            <p>30K Creators</p>
+                            <ul>
+                                <li><svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.07068 0.404801C6.3187 -0.0977349 7.0353 -0.0977358 7.28332 0.4048L8.672 3.21858C8.77049 3.41814 8.96086 3.55646 9.18109 3.58846L12.2863 4.03967C12.8409 4.12025 13.0623 4.80178 12.661 5.19295L10.4141 7.38317C10.2547 7.53851 10.182 7.76231 10.2196 7.98164L10.75 11.0743C10.8448 11.6266 10.265 12.0478 9.769 11.7871L6.99163 10.3269C6.79466 10.2234 6.55934 10.2234 6.36237 10.3269L3.585 11.7871C3.08896 12.0478 2.50922 11.6266 2.60396 11.0743L3.13439 7.98164C3.172 7.76231 3.09929 7.53851 2.93993 7.38317L0.692993 5.19295C0.291694 4.80178 0.513135 4.12025 1.06772 4.03967L4.17291 3.58846C4.39313 3.55646 4.58351 3.41814 4.682 3.21858L6.07068 0.404801Z"
+                                            fill="#F3B545" /></svg></li>
+                                <li><svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.07068 0.404801C6.3187 -0.0977349 7.0353 -0.0977358 7.28332 0.4048L8.672 3.21858C8.77049 3.41814 8.96086 3.55646 9.18109 3.58846L12.2863 4.03967C12.8409 4.12025 13.0623 4.80178 12.661 5.19295L10.4141 7.38317C10.2547 7.53851 10.182 7.76231 10.2196 7.98164L10.75 11.0743C10.8448 11.6266 10.265 12.0478 9.769 11.7871L6.99163 10.3269C6.79466 10.2234 6.55934 10.2234 6.36237 10.3269L3.585 11.7871C3.08896 12.0478 2.50922 11.6266 2.60396 11.0743L3.13439 7.98164C3.172 7.76231 3.09929 7.53851 2.93993 7.38317L0.692993 5.19295C0.291694 4.80178 0.513135 4.12025 1.06772 4.03967L4.17291 3.58846C4.39313 3.55646 4.58351 3.41814 4.682 3.21858L6.07068 0.404801Z"
+                                            fill="#F3B545" /></svg></li>
+                                <li><svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.07068 0.404801C6.3187 -0.0977349 7.0353 -0.0977358 7.28332 0.4048L8.672 3.21858C8.77049 3.41814 8.96086 3.55646 9.18109 3.58846L12.2863 4.03967C12.8409 4.12025 13.0623 4.80178 12.661 5.19295L10.4141 7.38317C10.2547 7.53851 10.182 7.76231 10.2196 7.98164L10.75 11.0743C10.8448 11.6266 10.265 12.0478 9.769 11.7871L6.99163 10.3269C6.79466 10.2234 6.55934 10.2234 6.36237 10.3269L3.585 11.7871C3.08896 12.0478 2.50922 11.6266 2.60396 11.0743L3.13439 7.98164C3.172 7.76231 3.09929 7.53851 2.93993 7.38317L0.692993 5.19295C0.291694 4.80178 0.513135 4.12025 1.06772 4.03967L4.17291 3.58846C4.39313 3.55646 4.58351 3.41814 4.682 3.21858L6.07068 0.404801Z"
+                                            fill="#F3B545" /></svg></li>
+                                <li><svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.07068 0.404801C6.3187 -0.0977349 7.0353 -0.0977358 7.28332 0.4048L8.672 3.21858C8.77049 3.41814 8.96086 3.55646 9.18109 3.58846L12.2863 4.03967C12.8409 4.12025 13.0623 4.80178 12.661 5.19295L10.4141 7.38317C10.2547 7.53851 10.182 7.76231 10.2196 7.98164L10.75 11.0743C10.8448 11.6266 10.265 12.0478 9.769 11.7871L6.99163 10.3269C6.79466 10.2234 6.55934 10.2234 6.36237 10.3269L3.585 11.7871C3.08896 12.0478 2.50922 11.6266 2.60396 11.0743L3.13439 7.98164C3.172 7.76231 3.09929 7.53851 2.93993 7.38317L0.692993 5.19295C0.291694 4.80178 0.513135 4.12025 1.06772 4.03967L4.17291 3.58846C4.39313 3.55646 4.58351 3.41814 4.682 3.21858L6.07068 0.404801Z"
+                                            fill="#F3B545" /></svg></li>
+                                <li><svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.07068 0.404801C6.3187 -0.0977349 7.0353 -0.0977358 7.28332 0.4048L8.672 3.21858C8.77049 3.41814 8.96086 3.55646 9.18109 3.58846L12.2863 4.03967C12.8409 4.12025 13.0623 4.80178 12.661 5.19295L10.4141 7.38317C10.2547 7.53851 10.182 7.76231 10.2196 7.98164L10.75 11.0743C10.8448 11.6266 10.265 12.0478 9.769 11.7871L6.99163 10.3269C6.79466 10.2234 6.55934 10.2234 6.36237 10.3269L3.585 11.7871C3.08896 12.0478 2.50922 11.6266 2.60396 11.0743L3.13439 7.98164C3.172 7.76231 3.09929 7.53851 2.93993 7.38317L0.692993 5.19295C0.291694 4.80178 0.513135 4.12025 1.06772 4.03967L4.17291 3.58846C4.39313 3.55646 4.58351 3.41814 4.682 3.21858L6.07068 0.404801Z"
+                                            fill="#F3B545" /></svg></li>
+                            </ul>
+                        </div>
+                    </div>
                     <img src="images/hero-image.jpg" alt="">
                 </div>
                 <div class="counter-content">
                     <div class="row">
                         <div class="col-md-4 col-sm-4">
-                            <div class="counter-num">19,425</div>
+                            <div class="counter-num"><span class="count">19425</span></div>
                             <div class="counter-title">Active Users</div>
                         </div>
                         <div class="col-md-4 col-sm-4">
-                            <div class="counter-num">26,022,711</div>
+                            <div class="counter-num"><span class="count">26022711</span></div>
                             <div class="counter-title">Written Works</div>
                         </div>
                         <div class="col-md-4 col-sm-4">
-                            <div class="counter-num">4.5</div>
+                            <div class="counter-num"><span class="count">4.5</span></div>
                             <div class="counter-icon">
                                 <ul>
                                     <li><svg width="13" height="12" viewBox="0 0 13 12" fill="none"
@@ -479,18 +538,19 @@
                         <div class="newsletter">
                             <h3>Join our newsletter</h3>
                             <form>
-                                <input type="email" placeholder="Email">
+                                <input type="email" placeholder="Email" required>
                                 <button type="submit">Subscribe</button>
                             </form>
                         </div>
                         <div class="follow">
                             <h3>Follow us</h3>
                             <ul>
-                                <li><a href="#" target="_blank"><img src="images/" alt=""></a></li>
-                                <li><a href="#" target="_blank"><img src="images/" alt=""></a></li>
-                                <li><a href="#" target="_blank"><img src="images/" alt=""></a></li>
-                                <li><a href="#" target="_blank"><img src="images/" alt=""></a></li>
-                                <li><a href="#" target="_blank"><img src="images/" alt=""></a></li>
+                                <li><a href="#" target="_blank"><img src="images/facebook-f-brands.svg" alt=""></a></li>
+                                <li><a href="#" target="_blank"><img src="images/twitter-brands.svg" alt=""></a></li>
+                                <li><a href="#" target="_blank"><img src="images/linkedin-in-brands.svg" alt=""></a>
+                                </li>
+                                <li><a href="#" target="_blank"><img src="images/whatsapp-brands.svg" alt=""></a></li>
+                                <li><a href="#" target="_blank"><img src="images/instagram-brands.svg" alt=""></a></li>
                             </ul>
                         </div>
                     </div>
