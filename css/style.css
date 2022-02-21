@@ -999,7 +999,9 @@ a:hover {
 
 #carouselTestimonial .carousel-control-next img {}
 
-.sec-blog {}
+.sec-blog {
+    padding-bottom: 165px;
+}
 
 .sec-blog .container {
     max-width: 1250px;
@@ -1082,6 +1084,7 @@ a:hover {
 .post-card {
     background: #FEFEFE;
     box-shadow: 0px 4px 58px 3px #c5c7cc40;
+    border: 1.5px solid #EBEBEB;
     border-radius: 10px;
     transform: rotate(0deg);
     padding: 30px;
@@ -1090,6 +1093,11 @@ a:hover {
     max-width: 412px;
     margin: auto;
     margin-bottom: 50px;
+    transition: linear .2s;
+}
+
+.post-card:hover {
+    border-color: transparent;
 }
 
 .post-card:last-child {
@@ -1110,6 +1118,7 @@ a:hover {
     line-height: 33px;
     color: #06080E;
     text-transform: uppercase;
+    transition: linear .2s;
 }
 
 .post-card a img {
@@ -1118,6 +1127,15 @@ a:hover {
     border-radius: 20px;
     padding: 6px;
     margin-left: 13px;
+    transition: linear .2s;
+}
+
+.post-card:hover a {
+    color: #FE7747;
+}
+
+.post-card:hover img {
+    background: #FE7747;
 }
 
 .post-card.post-card-1 {
@@ -1128,4 +1146,138 @@ a:hover {
 
 .post-card.post-card-3 {
     transform: rotate(-7.18deg);
+}
+
+footer {
+    position: relative;
+    background-image: url(../images/footer-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 166px;
+}
+
+.back-top-btn {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #FE7747;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    height: 58px;
+    width: 58px;
+    border-radius: 50px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.back-top-btn img {
+    width: 20px;
+}
+
+.footer-widget {}
+
+.footer-widget h3 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+/* identical to box height, or 136% */
+    letter-spacing: 0.02em;
+
+/* Text color/white */
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer-widget p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+/* or 186% */
+
+
+/* Text color/500 */
+    color: #B8B8B8;
+}
+
+.footer-widget ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-widget ul li {
+    line-height: 30px;
+}
+
+.footer-widget ul li a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+/* or 189% */
+    letter-spacing: 0.02em;
+    color: #9C9C9C;
+}
+
+.footer-logo {
+    margin-bottom: 15px;
+}
+
+.footer-logo img {}
+
+.newsletter {}
+
+.newsletter h3 {}
+
+.newsletter h3::before {
+    content: "";
+}
+
+.newsletter h3::after {
+    content: "";
+}
+
+.newsletter {}
+
+.newsletter h3 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 34px;
+/* identical to box height, or 155% */
+    letter-spacing: 0.02em;
+
+/* Text color/white */
+    color: #FFFFFF;
+}
+
+.newsletter form {}
+
+.newsletter form input {}
+
+.newsletter form button {}
+
+.follow {}
+
+.follow h3 {}
+
+.follow ul {}
+
+.follow ul li {}
+
+.follow ul li a {}
+
+.copy-right {
+    text-align: center;
+    margin-top: 80px;
+    border-top: 1px solid #ffffff2e;
+    padding: 30px 0;
+
+}
+
+.copy-right p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #B8B8B8;
 }
