@@ -32,8 +32,9 @@
                 <!-- toggler -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation"><img src="images/bars-solid.svg" alt=""></button>
-                    <!-- toggler end -->
+                    aria-expanded="false" aria-label="Toggle navigation"><img src="images/bars-solid.svg"
+                        alt=""></button>
+                <!-- toggler end -->
 
                 <div class="collapse navbar-collapse navigation" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
@@ -90,6 +91,7 @@
 
 
     <main>
+        <!-- hero section start -->
         <section id="top" class="hero-sec">
             <div class="container">
                 <div class="hero-content">
@@ -99,9 +101,10 @@
                         artificial
                         intelligence to generate content from just a headline</p>
                     <form>
-                        <div class="sign-up-form">
+                        <div class="sign-up-form wow fadeInUp">
                             <input id="email" name="email" type="email" placeholder="Enter your email" required>
-                            <button type="submit"><svg width="14" height="9" viewBox="0 0 14 9" fill="none"
+                            <button class="wow fadeInLeft" data-wow-duration="2s" data-wow-iteration="3"
+                                type="submit"><svg width="14" height="9" viewBox="0 0 14 9" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M1.52276 4.55703L12.3011 4.60354M12.3011 4.60354L8.97102 1.12466M12.3011 4.60354L8.94112 8.05356"
@@ -110,12 +113,12 @@
                                 </svg></button>
                         </div>
                     </form>
-                    <ul>
+                    <ul class="wow fadeInUp">
                         <li><a href="#">Sign up for a free trial</a></li>
                         <li><a href="#">No Credit Card Reruired</a></li>
                     </ul>
                     <!-- Video Modal Button -->
-                    <button class="video-watch-button" data-bs-toggle="modal" data-bs-target="#heroVideo">
+                    <button class="video-watch-button wow fadeInUp" data-bs-toggle="modal" data-bs-target="#heroVideo">
                         <span class="text">View demo</span>
                         <span class="icon"><svg width="9" height="10" viewBox="0 0 9 10" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -126,11 +129,12 @@
                 </div>
             </div>
         </section>
+        <!-- hero section end -->
 
         <section class="counter-sec">
             <div class="container">
                 <div class="soft-src">
-                    <div class="review-card">
+                    <div class="review-card wow fadeInUp">
                         <div class="icon"><img src="images/Subtract.svg" alt="Subtract"></div>
                         <div class="text">
                             <h4>Content</h4>
@@ -164,20 +168,20 @@
                             </ul>
                         </div>
                     </div>
-                    <img src="images/hero-image.jpg" alt="">
+                    <img class="wow fadeInUp" src="images/hero-image.jpg" alt="">
                 </div>
                 <div class="counter-content">
                     <div class="row">
-                        <div class="col-md-4 col-sm-4">
-                            <div class="counter-num"><span class="count">19,425</span></div>
+                        <div class="col-md-4 col-sm-4 wow flipInX" id="counter-box">
+                            <div class="counter-num"><span class="counter" data-number="19425"></span></div>
                             <div class="counter-title">Active Users</div>
                         </div>
-                        <div class="col-md-4 col-sm-4">
-                            <div class="counter-num"><span class="count">26,022,711</span></div>
+                        <div class="col-md-4 col-sm-4 wow flipInX" id="counter-box">
+                            <div class="counter-num"><span class="counter" data-number="26022711"></span></div>
                             <div class="counter-title">Written Works</div>
                         </div>
-                        <div class="col-md-4 col-sm-4">
-                            <div class="counter-num"><span class="count">4.5</span></div>
+                        <div class="col-md-4 col-sm-4 wow flipInX" id="counter-box">
+                            <div class="counter-num">4.<span class="counter" data-number="5"></span></div>
                             <div class="counter-icon">
                                 <ul>
                                     <li><svg width="13" height="12" viewBox="0 0 13 12" fill="none"
@@ -485,12 +489,15 @@
                 </div>
                 <div class="row align-items-center">
                     <div class="col-md-6 col-sm-12">
-                        <div class="highlight-post">
-                            <img src="images/highlight-post-img.jpg" alt="">
-                            <h3><a href="#">How to write powerful Product Features Using Ai</a></h3>
-                            <p>You may have two very similar products, but chances are there are at least one or two
-                                things that distinguish them.</p>
-                            <a href="#" class="btn-post">Read more<img src="images/arrow-right-white.svg" alt=""></a>
+                        <div class="blog-asset">
+                            <div class="highlight-post">
+                                <img src="images/highlight-post-img.jpg" alt="">
+                                <h3><a href="#">How to write powerful Product Features Using Ai</a></h3>
+                                <p>You may have two very similar products, but chances are there are at least one or two
+                                    things that distinguish them.</p>
+                                <a href="#" class="btn-post">Read more<img src="images/arrow-right-white.svg"
+                                        alt=""></a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12">
@@ -570,6 +577,24 @@
         </div>
     </footer>
     <!-- footer end -->
+
+
+
+    <!-- Video Modal -->
+    <div class="modal fade video-modal" id="heroVideo" tabindex="-1" aria-labelledby="heroVideoLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <iframe width="1033" height="581" src="https://www.youtube.com/embed/aIovmgzyuL0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 

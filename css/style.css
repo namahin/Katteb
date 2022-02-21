@@ -7,7 +7,7 @@
 
 body,
 html {
-    overflow-x: hidden
+    /* overflow-x: hidden */
 }
 
 h1,
@@ -22,7 +22,12 @@ p {
 
 a,
 a:hover {
-    text-decoration: none
+    text-decoration: none;
+    transition: linear .2s;
+}
+
+a:hover {
+    color: #FF7A4D;
 }
 
 .container {
@@ -36,11 +41,23 @@ a:hover {
     color: #fe7747;
     border-bottom: 1px solid #fe7747;
     padding-bottom: 10px;
-    display: inline-block
+    display: inline-block;
+    transition: linear .2s;
+}
+
+.btn-theme:hover {
+    color: #186CB5;
+    border-color: #186CB5;
 }
 
 .btn-theme img {
-    margin-left: 15px
+    margin-left: 15px;
+    transition: linear .2s;
+}
+
+.btn-theme:hover img {
+    filter: invert(.8);
+    transition: linear .2s;
 }
 
 .sec-title h2,
@@ -251,10 +268,15 @@ header .navigation ul {
     line-height: 14px;
     text-align: center;
     color: #fff;
-    background: #fe7747;
+    background-color: #fe7747;
     border-radius: 60px;
     padding: 17px 35px !important;
     text-transform: uppercase
+}
+
+.nav-btn a:hover {
+    background-color: #186CB5;
+    color: #FFFFFF;
 }
 
 .navbar-brand {
@@ -342,15 +364,14 @@ header .navigation ul {
 
 .hero-content .sign-up-form button {
     position: absolute;
-    top: 50%;
     right: 14px;
-    transform: translate(0, -50%);
     width: 42px;
     height: 42px;
     background-color: #fe7747;
     border: none;
     border-radius: 50%;
-    line-height: 0
+    line-height: 0;
+    bottom: 13px;
 }
 
 .hero-content .sign-up-form button svg {
@@ -392,6 +413,10 @@ header .navigation ul {
     font-size: 14px;
     line-height: 24px;
     color: #fff
+}
+
+.hero-content ul li a:hover {
+    color: #FF7A4D;
 }
 
 .video-watch-button {
@@ -1234,7 +1259,39 @@ header .navigation ul {
     padding: 30px;
     padding-bottom: 100px;
     position: relative;
-    max-width: 630px
+    max-width: 630px;
+    z-index: 1;
+}
+
+.blog-asset {
+    position: relative;
+}
+
+.blog-asset::before {
+    content: "";
+    height: 88px;
+    width: 88px;
+    background-image: url(../images/blog-asset-1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: absolute;
+    left: -45px;
+    top: -50px;
+    z-index: 0;
+}
+
+.blog-asset::after {
+    content: "";
+    height: 88px;
+    width: 88px;
+    background-image: url(../images/blog-asset-2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: absolute;
+    right: -40px;
+    bottom: -40px;
 }
 
 .highlight-post img {
@@ -1422,6 +1479,10 @@ footer {
     color: #9c9c9c
 }
 
+.footer-widget ul li a:hover {
+    color: #FF7A4D;
+}
+
 .footer-logo {
     margin-bottom: 15px
 }
@@ -1550,6 +1611,32 @@ footer {
     font-size: 14px;
     line-height: 26px;
     color: #b8b8b8
+}
+
+.video-modal {}
+
+.video-modal .btn-close {
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 50px;
+    right: 0;
+    position: absolute;
+}
+
+.video-modal .modal-content {
+    background: transparent;
+    border: none;
+}
+
+.video-modal .modal-body {
+    padding: 0;
+}
+
+.video-modal iframe {
+
+    width: 100%;
+
+    border-radius: 15px;
 }
 
 .paraphrasing-rocket img,

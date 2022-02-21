@@ -112,7 +112,10 @@
         margin-bottom: 20px;
         display: block;
     }
-
+    .nav-btn-login a:hover{
+        color: #FFFFFF;
+        background-color: #186CB5;
+    }
     .counter-sec .soft-src {
         margin-top: -300px;
     }
