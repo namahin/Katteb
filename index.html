@@ -25,7 +25,7 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="index.html"><img src="images/site-logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -75,19 +75,28 @@
                     <form>
                         <div class="sign-up-form">
                             <input id="email" name="email" type="email" placeholder="Enter your email" required>
-                            <button type="submit">></button>
+                            <button type="submit"><svg width="14" height="9" viewBox="0 0 14 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.52276 4.55703L12.3011 4.60354M12.3011 4.60354L8.97102 1.12466M12.3011 4.60354L8.94112 8.05356"
+                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg></button>
                         </div>
-                        <label for="email">Sign up for a free trial · No Credit Card Reruired</label>
                     </form>
+                    <ul>
+                        <li><a href="#">Sign up for a free trial</a></li>
+                        <li><a href="#">No Credit Card Reruired</a></li>
+                    </ul>
                     <!-- Video Modal Button -->
-                    <a href="#" class="video-watch-button" data-bs-toggle="modal" data-bs-target="#heroVideo">
+                    <button class="video-watch-button" data-bs-toggle="modal" data-bs-target="#heroVideo">
                         <span class="text">View demo</span>
                         <span class="icon"><svg width="9" height="10" viewBox="0 0 9 10" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M8.77385 5.00587C8.77385 5.2917 8.68388 5.57863 8.50396 5.80839C8.47022 5.85347 8.31279 6.03925 8.18909 6.16018L8.12162 6.22614C7.17702 7.22765 4.82676 8.73375 3.63476 9.21637C3.63476 9.22736 2.92631 9.51429 2.58895 9.52418H2.54397C2.02669 9.52418 1.54314 9.23945 1.29574 8.77773C1.1608 8.52378 1.0371 7.78722 1.02586 7.77732C0.924649 7.11661 0.857178 6.10522 0.857178 4.99488C0.857178 3.83067 0.924649 2.7742 1.04835 2.12558C1.04835 2.11459 1.17205 1.52094 1.25076 1.32306C1.37446 1.03833 1.59937 0.795373 1.8805 0.641464C2.1054 0.532629 2.34155 0.476562 2.58895 0.476562C2.84759 0.488655 3.33114 0.652458 3.52231 0.729412C4.78178 1.21312 7.18826 2.79618 8.11038 3.76361C8.26781 3.91752 8.43649 4.1055 8.48147 4.14838C8.67264 4.39024 8.77385 4.68706 8.77385 5.00587Z"
                                     fill="white" />
-                            </svg></span></a>
+                            </svg></span></button>
                 </div>
             </div>
         </section>
@@ -171,7 +180,6 @@
                             </div>
                             <div class="process-img-3"><img src="images/card-03.svg" alt=""></div>
                             <div class="process-img-4"><img src="images/card-04.svg" alt=""></div>
-                            <div class="process-img-5"><img src="images/arrow-up.svg" alt=""></div>
                         </div>
                     </div>
                     <div class="col-md-5 col-sm-5">
@@ -180,6 +188,9 @@
                                 <h3>Products Description</h3>
                                 <p>Create complelling product descriptions completely automatic.</p>
                             </div>
+                            <div class="process-img-5"><img src="images/ArrowUp.svg" alt=""></div>
+                            <div class="process-img-6"><img src="images/card-05.svg" alt=""></div>
+                            <div class="process-img-7"><img src="images/card-06.svg" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -189,17 +200,19 @@
         <section class="sec-working">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-sm-6">
-                        <div class="sec-title">
-                            <h2>Problem, Agitate, Solution</h2>
-                            <h3>Multiply your sales with this proven formula</h3>
-                            <p>Our persuasive copy will convince your target audience of the importance of your product
-                                or service, which helps you to easily multiply your profits.</p>
+                    <div class="col-md-6 col-sm-6 align-items-center">
+                        <div class="working-content">
+                            <div class="sec-title">
+                                <h3>Problem, Agitate, Solution</h3>
+                                <h4>Multiply your sales with this proven formula</h4>
+                                <p>Our persuasive copy will convince your target audience of the importance of your
+                                    product
+                                    or service, which helps you to easily multiply your profits.</p>
+                            </div>
+                            <a href="#" class="btn-theme">Read more<img src="images/btn-arrow-right.svg" alt=""></a>
                         </div>
-                        <a href="#" class="btn-theme">Read more <img src="images/btn-arrow-right.svg" alt=""></a>
                     </div>
-                    <div class="col-md-6 col-sm-6">
-                        <div class="working-bg"><img src="images/working-bg.svg" alt=""></div>
+                    <div class="col-md-6 col-sm-6 working-card-area">
                         <div class="working-card working-card-1">
                             <div class="card-title">
                                 <div class="icon"><img src="images/document.svg" alt=""></div>
@@ -232,18 +245,18 @@
 
         <section class="sec-blog-outline">
             <div class="container">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-md-6 col-sm-6">
                         <div class="blog-outline-img">
                             <div class="img-1"><img src="images/Methods.svg" alt=""></div>
-                            <div class="img-1"><img src="images/AI-powered.svg" alt=""></div>
+                            <div class="img-2"><img src="images/AI-powered.svg" alt=""></div>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-6">
                         <div class="blog-outline-content">
                             <div class="sec-title">
                                 <h2>Blog Outline</h2>
-                                <h3>Plan and structure content for articles</h3>
+                                <h4>Plan and structure content for articles</h4>
                                 <p>Use Katteb AI to plan and structure high-quality articles in a heartbeat. If you want
                                     to
                                     enrich your content, and make it punchy, just by giving a few keywords, you will get
@@ -254,7 +267,7 @@
                                 <li>Deep topic understanding.</li>
                                 <li>No more writer's block!</li>
                             </ul>
-                            <a href="#" class="btn-theme">Read more <img src="images/btn-arrow-right.svg" alt=""></a>
+                            <a href="#" class="btn-theme">Read more<img src="images/btn-arrow-right.svg" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -263,18 +276,21 @@
 
         <section class="sec-products">
             <div class="container">
-                <div class="col-md-6 col-sm-6">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-sm-6">
 
-                </div>
-                <div class="col-md-6 col-sm-6">
-                    <div class="products-content">
-                        <div class="sec-title">
-                            <h2>Products Descriptions</h2>
-                            <h3>Automate your store's content</h3>
-                            <p>Create unique and enticing product descriptions for your online store with an advanced
-                                Katteb AI language model.</p>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="products-content">
+                            <div class="sec-title">
+                                <h2>Products Descriptions</h2>
+                                <h4>Automate your store's content</h4>
+                                <p>Create unique and enticing product descriptions for your online store with an
+                                    advanced
+                                    Katteb AI language model.</p>
+                            </div>
+                            <a href="#" class="btn-theme">Read more<img src="images/btn-arrow-right.svg" alt=""></a>
                         </div>
-                        <a href="#" class="btn-theme">Read more <img src="images/btn-arrow-right.svg" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -282,8 +298,8 @@
 
         <section class="sec-paraphrasing">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6">
+                <div class="row align-items-center">
+                    <div class="col-md-5 col-sm-5">
                         <div class="paraphrasing-content">
                             <div class="sec-title">
                                 <h2>Paraphrasing</h2>
@@ -297,10 +313,8 @@
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                                             aria-controls="panelsStayOpen-collapseOne">
-                                            <span class="num">1</span><span class="text">Context Adjustment</span><img
-                                                src="images/arrow-right.svg" alt="">
-                                        </button>
-                                    </div>
+                                            <span class="num">1</span><span class="text">Context
+                                                Adjustment</span></button></div>
                                     <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
                                         aria-labelledby="panelsStayOpen-headingOne">
                                         <div class="accordion-body">It is shown by default, until the collapse plugin
@@ -312,9 +326,7 @@
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
                                             aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                            <span class="num">2</span><span class="text">Text Enrichment</span><img
-                                                src="images/arrow-right.svg" alt="">
-                                        </button>
+                                            <span class="num">2</span><span class="text">Text Enrichment</span></button>
                                     </div>
                                     <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
                                         aria-labelledby="panelsStayOpen-headingTwo">
@@ -323,10 +335,17 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="#" class="btn-theme">Read more <img src="images/btn-arrow-right.svg" alt=""></a>
+                            <a href="#" class="btn-theme">Read more<img src="images/btn-arrow-right.svg" alt=""></a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-6"></div>
+                    <div class="col-md-7 col-sm-7">
+                        <div class="paraphrasing-img">
+                            <img src="images/paraphrasing-img.svg" alt="">
+                            <div class="paraphrasing-rocket">
+                                <img src="images/rocket.png" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -411,21 +430,21 @@
                             <h3><a href="#">How to write powerful Product Features Using Ai</a></h3>
                             <p>You may have two very similar products, but chances are there are at least one or two
                                 things that distinguish them.</p>
-                            <a href="#" class="btn-post">Read more <img src="images/arrow-right-white.svg" alt=""></a>
+                            <a href="#" class="btn-post">Read more<img src="images/arrow-right-white.svg" alt=""></a>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-6">
                         <div class="post-card post-card-1">
                             <h3>What are the characteristics of the product?</h3>
-                            <a href="#" class="btn-post">Read more <img src="images/arrow-right-white.svg" alt=""></a>
+                            <a href="#" class="btn-post">Read more<img src="images/arrow-right-white.svg" alt=""></a>
                         </div>
                         <div class="post-card post-card-2">
                             <h3>The difference between features and benefits</h3>
-                            <a href="#" class="btn-post">Read more <img src="images/arrow-right-white.svg" alt=""></a>
+                            <a href="#" class="btn-post">Read more<img src="images/arrow-right-white.svg" alt=""></a>
                         </div>
                         <div class="post-card post-card-3">
                             <h3>Examples of features and benefits</h3>
-                            <a href="#" class="btn-post">Read more <img src="images/arrow-right-white.svg" alt=""></a>
+                            <a href="#" class="btn-post">Read more<img src="images/arrow-right-white.svg" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -440,7 +459,7 @@
             <div class="row">
                 <div class="col-md-4 col-sm-4">
                     <div class="footer-widget">
-                        <div class="footer-logo"><img src="images/footer-logo.png" alt=""></div>
+                        <div class="footer-logo"><img src="images/site-logo.png" alt=""></div>
                         <p>Texta is an artificial intelligence-driven app that automatically generates content from
                             existing text.<br>
                             Lorem ipsum dolor sit amet consectetur adipiscing elit et ac adipiscing quis enim mi turpis
