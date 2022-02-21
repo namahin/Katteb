@@ -1099,7 +1099,8 @@ header .navigation ul {
 
 .paraphrasing-img {
     position: relative;
-    text-align: right
+    text-align: right;
+    overflow: hidden;
 }
 
 .paraphrasing-rocket {
