@@ -84,6 +84,16 @@ a:hover {
     color: #2d2d2db3
 }
 
+.ellipse {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    background: #ACD8BF;
+    border-radius: 50%;
+    display: inline-block;
+    top: 75px;
+}
+
 header {
     position: absolute;
     left: 0;
@@ -1546,7 +1556,7 @@ footer {
     width: 100%;
     height: 57px;
     padding-left: 26px;
-    padding-right: 150px
+    padding-right: 150px;
 }
 
 .newsletter form button {
@@ -1562,21 +1572,26 @@ footer {
     right: 0;
     top: 0;
     bottom: 0;
-    width: 146px
+    width: 146px;
+    transition: linear .2s;
+}
+
+.newsletter form button:hover {
+    background-color: #006AB1;
 }
 
 .follow h3 {
     font-size: 18px;
-    margin-bottom: 17px
+    margin-bottom: 17px;
 }
 
 .follow ul li {
     display: inline-block;
-    margin-right: 18px
+    margin-right: 18px;
 }
 
 .follow ul li:last-child {
-    margin-right: 0
+    margin-right: 0;
 }
 
 .follow ul li a {
@@ -1588,7 +1603,11 @@ footer {
     box-sizing: border-box;
     backdrop-filter: blur(10px);
     position: relative;
-    border-radius: 50%
+    border-radius: 50%;
+}
+
+.follow ul li a:hover {
+    background-color: #FF7A4D;
 }
 
 .follow ul li a img {
@@ -1596,21 +1615,21 @@ footer {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
 
 .copy-right {
     text-align: center;
     margin-top: 80px;
     border-top: 1px solid #ffffff2e;
-    padding: 30px 0
+    padding: 30px 0;
 }
 
 .copy-right p {
     font-weight: 400;
     font-size: 14px;
     line-height: 26px;
-    color: #b8b8b8
+    color: #b8b8b8;
 }
 
 .video-modal .btn-close {
@@ -1641,7 +1660,7 @@ footer {
 .post-card,
 .review-card {
     animation: 3s Infinite linear wind;
-    animation-delay: 0s
+    animation-delay: 0s;
 }
 
 .highlight-post,
@@ -1651,25 +1670,26 @@ footer {
 .products-bg img,
 .working-card-1 {
     animation: 3s Infinite linear floating;
-    animation-delay: 0s
+    animation-delay: 0s;
 }
 
 .process-img-2 img,
 .working-card-2 {
     animation: 3s Infinite linear floating-opposite;
-    animation-delay: 0s
+    animation-delay: 0s;
 }
 
 .blog-outline-img .img-2 img,
 .process-img-3 img,
 .working-card-3 {
     animation: 3s Infinite linear floating-left;
-    animation-delay: 0s
+    animation-delay: 0s;
 }
 
-.back-top-btn {
+.back-top-btn,
+.ellipse {
     animation: 3s Infinite linear heartbeat;
-    animation-delay: 0s
+    animation-delay: 0s;
 }
 
 @keyframes wind {

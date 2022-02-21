@@ -446,6 +446,14 @@
         padding-right: 0;
         padding-bottom: 0;
     }
+    #carouselTestimonial{
+        padding: 20px;
+        padding-top: 30px;
+    }
+    #carouselTestimonial .carousel-control-next, #carouselTestimonial .carousel-control-prev{
+        bottom: unset;
+        top: 80px;
+    }
 }
 
 /* `xs` returns only a ruleset and no media query */
