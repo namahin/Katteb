@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     outline: 0;
-    font-family: Inter, sans-serif
+    font-family: 'Inter', 'Tajawal', sans-serif;
 }
 
 body,
@@ -998,9 +998,12 @@ header .navigation ul {
     margin-top: 30px
 }
 
+.products-content {
+    max-width: 437px
+}
+
 .products-content .sec-title {
     margin-bottom: 50px;
-    max-width: 437px
 }
 
 .sec-paraphrasing {
@@ -1454,7 +1457,6 @@ footer {
 .back-top-btn img {
     width: 20px
 }
-
 .footer-widget h3 {
     font-weight: 500;
     font-size: 22px;
@@ -1469,7 +1471,6 @@ footer {
     font-size: 14px;
     line-height: 26px;
     color: #b8b8b8;
-    max-width: 279px
 }
 
 .footer-widget ul {

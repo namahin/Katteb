@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=3, initial-scale=1.0">
+    <title>Katteb</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/site-icon.png" type="image/x-icon">
+    <!-- Google Font 'Inter' 'Tajawal' -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap v5.1.3 CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- UIkit 3.11.1 CSS -->
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- main header -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="images/site-logo.png" alt=""></a>
+
+                <!-- toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><img src="images/bars-solid.svg"
+                        alt=""></button>
+                <!-- toggler end -->
+
+                <div class="collapse navbar-collapse navigation" id="navbarSupportedContent">
+                    <ul dir="rtl" class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">الصفحة الرئيسية</a>
+                        </li>
+
+                        <li dir="ltr" class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                القوالب
+                            </a>
+                            <ul class="dropdown-menu text-end" aria-labelledby="navbarDropdown">
+                                <li><a href="#">القوالب 01</a></li>
+                                <li><a href="#">القوالب 02</a></li>
+                                <li><a href="#">القوالب 03</a></li>
+                                <li><a href="#">القوالب 04</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">التسعير</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">المدونات</a></li>
+                        <li class="nav-item">
+                            <div dir="ltr" class="select-box nav-link">
+                                <div class="sb-current" tabindex="1">
+                                    <div class="sb-value">
+                                        <input class="sb-input" type="radio" id="en" value="English" name="Lang"
+                                            checked="checked" />
+                                        <p class="sb-input-text"><img src="images/en.jpg" alt="English">إنجليزي</p>
+                                    </div>
+                                    <div class="sb-value">
+                                        <input class="sb-input" type="radio" id="ar" value="Arabic" name="Lang" />
+                                        <p class="sb-input-text"><img src="images/ar.jpg" alt="Arabic">العربية</p>
+                                    </div>
+
+                                    <img class="select-box__icon" src="images/arrow-down.svg" alt="Arrow Icon"
+                                        aria-hidden="true" /><!-- -->
+                                </div>
+                                <ul class="sb-list">
+                                    <li><label class="sb-option" for="en" aria-hidden="aria-hidden"><img
+                                                src="images/en.jpg" alt="English">إنجليزي</label></li>
+                                    <li><label class="sb-option" for="ar" aria-hidden="aria-hidden"><img
+                                                src="images/ar.jpg" alt="Arabic">العربية</label></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                        <ul class="d-flex">
+                            <li class="nav-item nav-btn-login"><a class="nav-link" href="#">يسجل دخول</a></li>
+                            <li class="nav-item nav-btn"><a class="nav-link" href="#">يسجل دخول</a></li>
+                        </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- main header end -->
+
+
+    <main>
+        <!-- hero section start -->
+        <section id="top" class="hero-sec">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="wow fadeInUp">مساعدك الذكى لكتابة المحتوى العربى</h1>
+                    <h3 class="wow fadeInUp">احصل على محتوى حصري بضغطة زر واحدة</h3>
+                    <p class="wow fadeInUp">كاتب هو أول ذكاء اصطناعى يدعم اللغة العربية فى إنشاء المقالات ووصف المنتجات بدون الحاجة إلى كتاب محتوى متفرغين.</p>
+                    <form>
+                        <div class="sign-up-form wow fadeInUp">
+                            <input id="email" name="email" type="email" placeholder="أدخل بريدك الإلكتروني" required>
+                            <button class="wow fadeInLeft" data-wow-duration="2s" data-wow-iteration="3"
+                                type="submit"><svg width="14" height="9" viewBox="0 0 14 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.52276 4.55703L12.3011 4.60354M12.3011 4.60354L8.97102 1.12466M12.3011 4.60354L8.94112 8.05356"
+                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg></button>
+                        </div>
+                    </form>
+                    <ul class="wow fadeInUp">
+                        <li><a href="#">التسجيل للحصول على تجربة مجانية</a></li>
+                        <li><a href="#">بطاقة الإئتمان غير مطالب بها/a></li>
+                    </ul>
+                    <!-- Video Modal Button -->
+                    <button class="video-watch-button wow fadeInUp" data-bs-toggle="modal" data-bs-target="#heroVideo">
+                        <span class="text">مشاهدة العرض التوضيحي</span>
+                        <span class="icon"><svg width="9" height="10" viewBox="0 0 9 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.77385 5.00587C8.77385 5.2917 8.68388 5.57863 8.50396 5.80839C8.47022 5.85347 8.31279 6.03925 8.18909 6.16018L8.12162 6.22614C7.17702 7.22765 4.82676 8.73375 3.63476 9.21637C3.63476 9.22736 2.92631 9.51429 2.58895 9.52418H2.54397C2.02669 9.52418 1.54314 9.23945 1.29574 8.77773C1.1608 8.52378 1.0371 7.78722 1.02586 7.77732C0.924649 7.11661 0.857178 6.10522 0.857178 4.99488C0.857178 3.83067 0.924649 2.7742 1.04835 2.12558C1.04835 2.11459 1.17205 1.52094 1.25076 1.32306C1.37446 1.03833 1.59937 0.795373 1.8805 0.641464C2.1054 0.532629 2.34155 0.476562 2.58895 0.476562C2.84759 0.488655 3.33114 0.652458 3.52231 0.729412C4.78178 1.21312 7.18826 2.79618 8.11038 3.76361C8.26781 3.91752 8.43649 4.1055 8.48147 4.14838C8.67264 4.39024 8.77385 4.68706 8.77385 5.00587Z"
+                                    fill="white" />
+                            </svg></span></button>
+                </div>
+            </div>
+        </section>
+        <!-- hero section end -->
+
+        <!-- counter section start -->
+        <section class="counter-sec">
+            <div class="container">
+                <div class="soft-src">
+                    <div class="review-card wow fadeInUp">
+                        <div class="icon"><img src="images/Subtract.svg" alt="Subtract"></div>
+                        <div class="text">
+                            <h4>محتوى</h4>
+                            <p>30 ألف مبدع</p>
+                            <ul>
+                                <li><svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.07068 0.404801C6.3187 -0.0977349 7.0353 -0.0977358 7.28332 0.4048L8.672 3.21858C8.77049 3.41814 8.96086 3.55646 9.18109 3.58846L12.2863 4.03967C12.8409 4.12025 13.0623 4.80178 12.661 5.19295L10.4141 7.38317C10.2547 7.53851 10.182 7.76231 10.2196 7.98164L10.75 11.0743C10.8448 11.6266 10.265 12.0478 9.769 11.7871L6.99163 10.3269C6.79466 10.2234 6.55934 10.2234 6.36237 10.3269L3.585 11.7871C3.08896 12.0478 2.50922 11.6266 2.60396 11.0743L3.13439 7.98164C3.172 7.76231 3.09929 7.53851 2.93993 7.38317L0.692993 5.19295C0.291694 4.80178 0.513135 4.12025 1.06772 4.03967L4.17291 3.58846C4.39313 3.55646 4.58351 3.41814 4.682 3.21858L6.07068 0.404801Z"
+                                            fill="#F3B545" /></svg></li>
+                                <li><svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.07068 0.404801C6.3187 -0.0977349 7.0353 -0.0977358 7.28332 0.4048L8.672 3.21858C8.77049 3.41814 8.96086 3.55646 9.18109 3.58846L12.2863 4.03967C12.8409 4.12025 13.0623 4.80178 12.661 5.19295L10.4141 7.38317C10.2547 7.53851 10.182 7.76231 10.2196 7.98164L10.75 11.0743C10.8448 11.6266 10.265 12.0478 9.769 11.7871L6.99163 10.3269C6.79466 10.2234 6.55934 10.2234 6.36237 10.3269L3.585 11.7871C3.08896 12.0478 2.50922 11.6266 2.60396 11.0743L3.13439 7.98164C3.172 7.76231 3.09929 7.53851 2.93993 7.38317L0.692993 5.19295C0.291694 4.80178 0.513135 4.12025 1.06772 4.03967L4.17291 3.58846C4.39313 3.55646 4.58351 3.41814 4.682 3.21858L6.07068 0.404801Z"
+                                            fill="#F3B545" /></svg></li>
+                                <li><svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.07068 0.404801C6.3187 -0.0977349 7.0353 -0.0977358 7.28332 0.4048L8.672 3.21858C8.77049 3.41814 8.96086 3.55646 9.18109 3.58846L12.2863 4.03967C12.8409 4.12025 13.0623 4.80178 12.661 5.19295L10.4141 7.38317C10.2547 7.53851 10.182 7.76231 10.2196 7.98164L10.75 11.0743C10.8448 11.6266 10.265 12.0478 9.769 11.7871L6.99163 10.3269C6.79466 10.2234 6.55934 10.2234 6.36237 10.3269L3.585 11.7871C3.08896 12.0478 2.50922 11.6266 2.60396 11.0743L3.13439 7.98164C3.172 7.76231 3.09929 7.53851 2.93993 7.38317L0.692993 5.19295C0.291694 4.80178 0.513135 4.12025 1.06772 4.03967L4.17291 3.58846C4.39313 3.55646 4.58351 3.41814 4.682 3.21858L6.07068 0.404801Z"
+                                            fill="#F3B545" /></svg></li>
+                                <li><svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.07068 0.404801C6.3187 -0.0977349 7.0353 -0.0977358 7.28332 0.4048L8.672 3.21858C8.77049 3.41814 8.96086 3.55646 9.18109 3.58846L12.2863 4.03967C12.8409 4.12025 13.0623 4.80178 12.661 5.19295L10.4141 7.38317C10.2547 7.53851 10.182 7.76231 10.2196 7.98164L10.75 11.0743C10.8448 11.6266 10.265 12.0478 9.769 11.7871L6.99163 10.3269C6.79466 10.2234 6.55934 10.2234 6.36237 10.3269L3.585 11.7871C3.08896 12.0478 2.50922 11.6266 2.60396 11.0743L3.13439 7.98164C3.172 7.76231 3.09929 7.53851 2.93993 7.38317L0.692993 5.19295C0.291694 4.80178 0.513135 4.12025 1.06772 4.03967L4.17291 3.58846C4.39313 3.55646 4.58351 3.41814 4.682 3.21858L6.07068 0.404801Z"
+                                            fill="#F3B545" /></svg></li>
+                                <li><svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.07068 0.404801C6.3187 -0.0977349 7.0353 -0.0977358 7.28332 0.4048L8.672 3.21858C8.77049 3.41814 8.96086 3.55646 9.18109 3.58846L12.2863 4.03967C12.8409 4.12025 13.0623 4.80178 12.661 5.19295L10.4141 7.38317C10.2547 7.53851 10.182 7.76231 10.2196 7.98164L10.75 11.0743C10.8448 11.6266 10.265 12.0478 9.769 11.7871L6.99163 10.3269C6.79466 10.2234 6.55934 10.2234 6.36237 10.3269L3.585 11.7871C3.08896 12.0478 2.50922 11.6266 2.60396 11.0743L3.13439 7.98164C3.172 7.76231 3.09929 7.53851 2.93993 7.38317L0.692993 5.19295C0.291694 4.80178 0.513135 4.12025 1.06772 4.03967L4.17291 3.58846C4.39313 3.55646 4.58351 3.41814 4.682 3.21858L6.07068 0.404801Z"
+                                            fill="#F3B545" /></svg></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <img class="wow fadeInUp" src="images/hero-image.jpg" alt="">
+                </div>
+                <div class="counter-content">
+                    <div dir="rtl" class="row">
+                        <div class="col-md-4 col-sm-4 wow flipInX" id="counter-box">
+                            <div class="counter-num"><span class="counter" data-number="19425"></span></div>
+                            <div class="counter-title">المستخدمين النشطين</div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 wow flipInX" id="counter-box">
+                            <div class="counter-num"><span class="counter" data-number="26022711"></span></div>
+                            <div class="counter-title">عدد الكلمات المكتوبة</div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 wow flipInX" id="counter-box">
+                            <div class="counter-num">4.<span class="counter" data-number="5"></span></div>
+                            <div class="counter-icon">
+                                <ul>
+                                    <li><svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.07068 0.404801C6.3187 -0.0977349 7.0353 -0.0977358 7.28332 0.4048L8.672 3.21858C8.77049 3.41814 8.96086 3.55646 9.18109 3.58846L12.2863 4.03967C12.8409 4.12025 13.0623 4.80178 12.661 5.19295L10.4141 7.38317C10.2547 7.53851 10.182 7.76231 10.2196 7.98164L10.75 11.0743C10.8448 11.6266 10.265 12.0478 9.769 11.7871L6.99163 10.3269C6.79466 10.2234 6.55934 10.2234 6.36237 10.3269L3.585 11.7871C3.08896 12.0478 2.50922 11.6266 2.60396 11.0743L3.13439 7.98164C3.172 7.76231 3.09929 7.53851 2.93993 7.38317L0.692993 5.19295C0.291694 4.80178 0.513135 4.12025 1.06772 4.03967L4.17291 3.58846C4.39313 3.55646 4.58351 3.41814 4.682 3.21858L6.07068 0.404801Z"
+                                                fill="#F3B545" /></svg></li>
+                                    <li><svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.07068 0.404801C6.3187 -0.0977349 7.0353 -0.0977358 7.28332 0.4048L8.672 3.21858C8.77049 3.41814 8.96086 3.55646 9.18109 3.58846L12.2863 4.03967C12.8409 4.12025 13.0623 4.80178 12.661 5.19295L10.4141 7.38317C10.2547 7.53851 10.182 7.76231 10.2196 7.98164L10.75 11.0743C10.8448 11.6266 10.265 12.0478 9.769 11.7871L6.99163 10.3269C6.79466 10.2234 6.55934 10.2234 6.36237 10.3269L3.585 11.7871C3.08896 12.0478 2.50922 11.6266 2.60396 11.0743L3.13439 7.98164C3.172 7.76231 3.09929 7.53851 2.93993 7.38317L0.692993 5.19295C0.291694 4.80178 0.513135 4.12025 1.06772 4.03967L4.17291 3.58846C4.39313 3.55646 4.58351 3.41814 4.682 3.21858L6.07068 0.404801Z"
+                                                fill="#F3B545" /></svg></li>
+                                    <li><svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.07068 0.404801C6.3187 -0.0977349 7.0353 -0.0977358 7.28332 0.4048L8.672 3.21858C8.77049 3.41814 8.96086 3.55646 9.18109 3.58846L12.2863 4.03967C12.8409 4.12025 13.0623 4.80178 12.661 5.19295L10.4141 7.38317C10.2547 7.53851 10.182 7.76231 10.2196 7.98164L10.75 11.0743C10.8448 11.6266 10.265 12.0478 9.769 11.7871L6.99163 10.3269C6.79466 10.2234 6.55934 10.2234 6.36237 10.3269L3.585 11.7871C3.08896 12.0478 2.50922 11.6266 2.60396 11.0743L3.13439 7.98164C3.172 7.76231 3.09929 7.53851 2.93993 7.38317L0.692993 5.19295C0.291694 4.80178 0.513135 4.12025 1.06772 4.03967L4.17291 3.58846C4.39313 3.55646 4.58351 3.41814 4.682 3.21858L6.07068 0.404801Z"
+                                                fill="#F3B545" /></svg></li>
+                                    <li><svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.07068 0.404801C6.3187 -0.0977349 7.0353 -0.0977358 7.28332 0.4048L8.672 3.21858C8.77049 3.41814 8.96086 3.55646 9.18109 3.58846L12.2863 4.03967C12.8409 4.12025 13.0623 4.80178 12.661 5.19295L10.4141 7.38317C10.2547 7.53851 10.182 7.76231 10.2196 7.98164L10.75 11.0743C10.8448 11.6266 10.265 12.0478 9.769 11.7871L6.99163 10.3269C6.79466 10.2234 6.55934 10.2234 6.36237 10.3269L3.585 11.7871C3.08896 12.0478 2.50922 11.6266 2.60396 11.0743L3.13439 7.98164C3.172 7.76231 3.09929 7.53851 2.93993 7.38317L0.692993 5.19295C0.291694 4.80178 0.513135 4.12025 1.06772 4.03967L4.17291 3.58846C4.39313 3.55646 4.58351 3.41814 4.682 3.21858L6.07068 0.404801Z"
+                                                fill="#F3B545" /></svg></li>
+                                    <li><svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.07068 0.404801C6.3187 -0.0977349 7.0353 -0.0977358 7.28332 0.4048L8.672 3.21858C8.77049 3.41814 8.96086 3.55646 9.18109 3.58846L12.2863 4.03967C12.8409 4.12025 13.0623 4.80178 12.661 5.19295L10.4141 7.38317C10.2547 7.53851 10.182 7.76231 10.2196 7.98164L10.75 11.0743C10.8448 11.6266 10.265 12.0478 9.769 11.7871L6.99163 10.3269C6.79466 10.2234 6.55934 10.2234 6.36237 10.3269L3.585 11.7871C3.08896 12.0478 2.50922 11.6266 2.60396 11.0743L3.13439 7.98164C3.172 7.76231 3.09929 7.53851 2.93993 7.38317L0.692993 5.19295C0.291694 4.80178 0.513135 4.12025 1.06772 4.03967L4.17291 3.58846C4.39313 3.55646 4.58351 3.41814 4.682 3.21858L6.07068 0.404801Z"
+                                                fill="#F3B545" /></svg></li>
+                                </ul>
+                            </div>
+                            <div class="counter-title">تقييم كاتب</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- counter section end -->
+
+        <!-- process section start -->
+        <section class="sec-process">
+            <div class="container">
+                <div class="sec-title">
+                    <h2 class="wow fadeInUp">كيف يعمل كاتب الذكاء الاصطناعي لدينا</h2>
+                    <p class="wow fadeInUp">احصل على أفكارك على الورق بشكل أسرع مع مؤلف الإعلانات الذي يعمل بالذكاء الاصطناعي خطوة بخطوة. أضف بضعة سطور حول منتجك أو شركتك وسنتكفل بالباقي.</p>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="process process-1 wow fadeInUp">
+                            <span class="ellipse"></span>
+                            <div class="process-content process-1-content text-end">
+                                <h3>المشكلة ، الهياج ، الحل</h3>
+                                <p>اشرح كيف سيؤثر منتجك أو خدمتك على حياة عملائك المحتملين.</p>
+                            </div>
+                            <div class="process-img-1"><img src="images/card-01.svg" alt=""></div>
+                            <div class="process-img-2"><img src="images/card-02.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-12">
+                        <div class="process process-2 wow fadeInUp">
+                            <span class="ellipse" style="background: #53BD95;"></span>
+                            <div class="process-content process-2-content">
+                                <h3>إعلانات الفيسبوك</h3>
+                                <p>قم بإنشاء العشرات من الأشكال المختلفة لإعلانات Facebook الخاصة بك على الفور</p>
+                            </div>
+                            <div class="process-img-3"><img src="images/card-03.svg" alt=""></div>
+                            <div class="process-img-4"><img src="images/card-04.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-12">
+                        <div class="process process-3 wow fadeInUp">
+                            <span class="ellipse" style="background: #FE7747;top: unset;bottom: 30%;"></span>
+                            <div class="process-content process-3-content">
+                                <h3>وصف المنتجات</h3>
+                                <p>قم بإنشاء أوصاف مقنعة للمنتج بشكل تلقائي تمامًا.</p>
+                            </div>
+                            <div class="process-img-5"><img src="images/ArrowUp.svg" alt=""></div>
+                            <div class="process-img-6"><img src="images/card-05.svg" alt=""></div>
+                            <div class="process-img-7"><img src="images/card-06.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- process section end -->
+
+        <!-- working section start -->
+        <section class="sec-working">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 align-items-center">
+                        <div class="working-content">
+                            <div class="sec-title wow fadeInUp">
+                                <h3>المشكلة ، الهياج ، الحل</h3>
+                                <h4>ضاعف مبيعاتك بهذه الصيغة المثبتة</h4>
+                                <p>نسختنا المقنعة ستقنع جمهورك المستهدف بأهمية منتجك أو خدمتك ، مما يساعدك على مضاعفة أرباحك بسهولة.</p>
+                            </div>
+                            <a href="#" class="btn-theme wow fadeInLeft">اقرأ أكثر<img src="images/btn-arrow-right.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 working-card-area">
+                        <div class="working-card working-card-1">
+                            <div class="card-title">
+                                <div class="icon"><img src="images/document.svg" alt=""></div>
+                                <div class="text">مشكلة</div>
+                            </div>
+                            <p>- نحن نجذب انتباه جمهورك بخطاف ذكي ونوضح آفاق مشكلتهم.</p>
+                        </div>
+                        <div class="working-card working-card-2">
+                            <div class="card-title">
+                                <div class="icon"><img src="images/bookmark.svg" alt=""></div>
+                                <div class="text">أثار</div>
+                            </div>
+                            <p>- في هذه المرحلة ، نرفع مستوى الإثارة ونشارك ما سيختبره جمهورك إذا لم يحلوا المشكلة. هذا يخلق إحساس السوق المستهدف بالإلحاح ويجعلهم يشترون منتجك أو خدمتك.</p>
+                        </div>
+                        <div class="working-card working-card-3">
+                            <div class="card-title">
+                                <div class="icon"><img src="images/edit.svg" alt=""></div>
+                                <div class="text">نسخة المبيعات</div>
+                            </div>
+                            <p>- شعر جمهورك بالحاجة الملحة لحل مشكلتهم ، والآن هذه هي اللحظة المثالية لتزويدهم بالراحة مع منتجك وخدمتك والتحدث عن الفوائد</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- working section end -->
+
+        <!-- outline blog section -->
+        <section class="sec-blog-outline">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="blog-outline-img">
+                            <div class="img-1 wow fadeInDown"><img src="images/Methods.svg" alt=""></div>
+                            <div class="img-2"><img src="images/AI-powered.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="blog-outline-content text-end">
+                            <div class="sec-title wow fadeInUp">
+                                <h2>مخطط المدونة</h2>
+                                <h4>تخطيط وهيكل المحتوى للمقالات</h4>
+                                <p>استخدم Katteb AI لتخطيط وتنظيم مقالات عالية الجودة في لمح البصر. إذا كنت ترغب في إثراء المحتوى الخاص بك ، وجعله قويًا ، بمجرد إعطاء بعض الكلمات الرئيسية ، فستحصل على العناوين الرئيسية أو الأفكار أو جزء كامل في أي وقت من الأوقات!</p>
+                            </div>
+                            <ul class="wow fadeInUp">
+                                <li>فهم عميق للموضوع.</li>
+                                <li>لا مزيد من كتلة الكاتب!</li>
+                            </ul>
+                            <a href="#" class="btn-theme wow fadeInLeft">اقرأ أكثر<img src="images/btn-arrow-right.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- outline blog section end -->
+
+        <!-- products section -->
+        <section class="sec-products">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-sm-12 products-bg wow fadeInLeft">
+                        <img src="images/products-demo.svg" alt="">
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="products-content wow fadeInUp text-end">
+                            <div class="sec-title">
+                                <h2>أوصاف المنتجات</h2>
+                                <h4>أتمتة محتوى متجرك</h4>
+                                <p>قم بإنشاء أوصاف منتج فريدة وجذابة لمتجرك عبر الإنترنت باستخدام نموذج لغة Katteb AI المتقدم.</p>
+                            </div>
+                            <a dir="rtl" href="#" class="btn-theme">اقرأ أكثر<img src="images/btn-arrow-right.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- products section end -->
+
+        <section class="sec-paraphrasing">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-5 col-sm-12">
+                        <div class="paraphrasing-content text-end">
+                            <div class="sec-title wow fadeInUp">
+                                <h2>مقتبسا</h2>
+                                <h4>سياق مختلف ، نفس المعنى.</h4>
+                                <p>لا يقتصر الأمر على استبدال الكلمات بمرادفاتها ، ولكنه يتعلق بإعادة صياغة جوهرية مع الاحتفاظ بنفس المعنى ، وإيجاد اللغة والأسلوب والنبرة المثالية.</p>
+                            </div>
+                            <div class="accordion" id="accordionParaphrasing">
+                                <div class="accordion-item wow fadeInUp">
+                                    <div class="accordion-header" id="panelsStayOpen-headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                            aria-controls="panelsStayOpen-collapseOne">
+                                            <span class="num">1</span><span class="text">تعديل السياق</span></button></div>
+                                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="panelsStayOpen-headingOne">
+                                        <div class="accordion-body">يقوم Katteb AI بوضع علامات على جميع المفاهيم ذات الصلة داخل المحتوى ، وإعادة صياغتها وإثرائها للحصول على جوهر النص الحقيقي.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item wow fadeInUp">
+                                    <div class="accordion-header" id="panelsStayOpen-headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                            <span class="num">2</span><span class="text">إثراء النص</span></button>
+                                    </div>
+                                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="panelsStayOpen-headingTwo">
+                                        <div class="accordion-body">يقوم Katteb AI بوضع علامات على جميع المفاهيم ذات الصلة داخل المحتوى ، وإعادة صياغتها وإثرائها للحصول على جوهر النص الحقيقي.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a dir="rtl" href="#" class="btn-theme wow fadeInLeft">اقرأ أكثر<img src="images/btn-arrow-right.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-12">
+                        <div class="paraphrasing-img">
+                            <img class="wow fadeInRight" src="images/paraphrasing-img.svg" alt="">
+                            <div class="paraphrasing-rocket wow fadeInUpBig" data-wow-duration="2s">
+                                <img src="images/rocket.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-help">
+            <div class="container">
+                <div class="help-content">
+                    <h2 class="wow fadeInUp">كيف يمكن أن يساعدك الكاتب في الكتابة؟</h2>
+                    <p class="wow fadeInUp">يجعل Texto من السهل إنشاء محتوى عالي الجودة لموقعك. يستخدم الذكاء الاصطناعي لإنشاء محتوى فريد ومحسّن لك.</p>
+                    <img class="wow fadeInUp" src="images/help.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-testimonial">
+            <div class="container">
+                <div class="testimonial-content">
+                    <div class="sec-title wow fadeInUp">
+                        <h2>ماذا يقول عملاؤنا</h2>
+                        <p>انضم إلى أكثر من 5000 عميل سعيد</p>
+                    </div>
+
+                    <div id="carouselTestimonial" class="carousel slide wow fadeInUp" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="carousel-block">
+                                    <div class="client-pic"><img src="images/client-pic.jpg" alt=""></div>
+                                    <div class="client-feedback text-end">
+                                        <h3>يعد برنامج Katteb أداة رائعة ...</h3>
+                                        <p>أنا أحب هذا التطبيق. أنا مؤلف إعلانات جيد جدًا ، لكن هذا ذهب! سيوفر لي الكثير من الوقت في إنشاء محتوى جديد. أعطيك بعض الأفكار الأساسية وأبصقها مباشرة</p>
+                                        <div class="client-bio">
+                                            <h4>كاهالا ويليامز</h4>
+                                            <p>الولايات المتحدة الأمريكية</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-block">
+                                    <div class="client-pic"><img src="images/client-pic.jpg" alt=""></div>
+                                    <div class="client-feedback text-end">
+                                        <h3>يعد برنامج Katteb أداة رائعة ...</h3>
+                                        <p>أنا أحب هذا التطبيق. أنا مؤلف إعلانات جيد جدًا ، لكن هذا ذهب! سيوفر لي الكثير من الوقت في إنشاء محتوى جديد. أعطيك بعض الأفكار الأساسية وأبصقها مباشرة</p>
+                                        <div class="client-bio">
+                                            <h4>كاهالا ويليامز</h4>
+                                            <p>الولايات المتحدة الأمريكية</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonial"
+                            data-bs-slide="prev"><img src="images/arrow-left-white.svg" alt=""></button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonial"
+                            data-bs-slide="next"><img src="images/arrow-right-white.svg" alt=""></button>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="sec-blog">
+            <div class="container">
+                <div class="sec-title wow fadeInUp">
+                    <h2>مدونتنا</h2>
+                    <p>الألم نفسه هو السبب الرئيسي في حب العميل</p>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="blog-asset">
+                            <div class="highlight-post text-end">
+                                <img src="images/highlight-post-img.jpg" alt="">
+                                <h3><a href="#">كيف تكتب منتج قوي
+                                    <br>الميزات باستخدام Ai</a></h3>
+                                <p>قد يكون لديك منتجان متشابهان للغاية ، ولكن هناك احتمال أن يكون هناك شيء أو شيئين على الأقل يميزهما.</p>
+                                <a dir="rtl" href="#" class="btn-post">اقرأ أكثر<img src="images/arrow-right-white.svg"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 text-end">
+                        <div class="post-card post-card-1">
+                            <h3>ما هي خصائص المنتج؟</h3>
+                            <a dir="rtl" href="#" class="btn-post">اقرأ أكثر<img src="images/arrow-right-white.svg" alt=""></a>
+                        </div>
+                        <div class="post-card post-card-2">
+                            <h3>الفرق بين الميزات والفوائد</h3>
+                            <a dir="rtl" href="#" class="btn-post">اقرأ أكثر<img src="images/arrow-right-white.svg" alt=""></a>
+                        </div>
+                        <div class="post-card post-card-3">
+                            <h3>أمثلة على الميزات والفوائد</h3>
+                            <a dir="rtl" href="#" class="btn-post">اقرأ أكثر<img src="images/arrow-right-white.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- footer start -->
+    <footer>
+        <a class="back-top-btn" href="#top"><img src="images/carve-arrow-up.svg" alt=""></a>
+        <div class="container">
+            <div class="row text-end">
+                <div class="col-md-4 col-sm-12">
+                    <div class="footer-widget" style="max-width: 269px">
+                        <div class="footer-logo"><img src="images/site-logo.png" alt=""></div>
+                        <p>Kateeb هو تطبيق مدفوع بالذكاء الاصطناعي يقوم تلقائيًا بإنشاء محتوى من نص موجود.
+                            <br>
+                            <br>
+                            الألم نفسه هو السبب الرئيسي في حب العميل</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="footer-widget">
+                        <h3>الدعم</h3>
+                        <ul>
+                            <li><a href="#">مركز المساعدة</a></li>
+                            <li><a href="#">تعليمات الاستخدام</a></li>
+                            <li><a href="#">سياسة خاصة</a></li>
+                            <li><a href="#">فريق</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="footer-widget">
+                        <div class="newsletter">
+                            <h3 dir="rtl">اشترك في صحيفتنا الإخبارية</h3>
+                            <form>
+                                <input type="email" placeholder="Email" required>
+                                <button type="submit">الإشتراك</button>
+                            </form>
+                        </div>
+                        <div class="follow">
+                            <h3>تابعنا</h3>
+                            <ul>
+                                <li><a href="#" target="_blank"><img src="images/facebook-f-brands.svg" alt=""></a></li>
+                                <li><a href="#" target="_blank"><img src="images/twitter-brands.svg" alt=""></a></li>
+                                <li><a href="#" target="_blank"><img src="images/linkedin-in-brands.svg" alt=""></a>
+                                </li>
+                                <li><a href="#" target="_blank"><img src="images/whatsapp-brands.svg" alt=""></a></li>
+                                <li><a href="#" target="_blank"><img src="images/instagram-brands.svg" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>حقوق النشر © <script>document.write(new Date().getFullYear())</script> خطيب. كل الحقوق محفوظة.</p>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+
+    <!-- Video Modal -->
+    <div class="modal fade video-modal" id="heroVideo" tabindex="-1" aria-labelledby="heroVideoLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <iframe width="1033" height="581" src="https://www.youtube.com/embed/aIovmgzyuL0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
