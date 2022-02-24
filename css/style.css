@@ -104,9 +104,13 @@ header {
 }
 
 header .navigation ul {
-    align-items: center
+    align-items: center;
+    padding: 0;
+    margin: 0;
 }
-
+.accout-btn-group{
+    list-style: none;
+}
 .nav-item {
     padding-left: 40px
 }
@@ -134,6 +138,10 @@ header .navigation ul {
     width: 115px;
     text-align: left;
     margin-right: 128px
+}
+
+.select-box-rtl {
+    margin-right: 0;
 }
 
 .sb-current {
@@ -367,6 +375,11 @@ header .navigation ul {
     padding-right: 80px
 }
 
+.hero-content .sign-up-form[dir=rtl] input {
+    padding-right: 29px;
+    padding-left: 80px;
+}
+
 .hero-content .sign-up-form input::placeholder {
     opacity: 1;
     color: #fff
@@ -384,8 +397,17 @@ header .navigation ul {
     bottom: 13px;
 }
 
+.hero-content .sign-up-form[dir=rtl] button {
+    left: 14px;
+    right: unset;
+}
+
 .hero-content .sign-up-form button svg {
     width: 17px
+}
+
+.hero-content .sign-up-form[dir=rtl] button svg {
+    transform: rotate(180deg);
 }
 
 .hero-content ul {
@@ -439,6 +461,11 @@ header .navigation ul {
     padding-right: 6px
 }
 
+.video-watch-button[dir=rtl] {
+    padding-left: 34px;
+    padding-right: 25px;
+}
+
 .video-watch-button .text {
     font-weight: 400;
     font-size: 16px;
@@ -447,10 +474,23 @@ header .navigation ul {
     margin-right: 20px
 }
 
+.video-watch-button[dir=rtl] .text {
+
+    margin-left: 30px;
+
+    margin-right: 0;
+}
+
 .video-watch-button .icon {
     position: relative;
     margin-right: 20px;
     margin-left: 10px
+}
+
+.video-watch-button[dir=rtl] .icon {
+    margin-left: 0;
+    margin-right: 0;
+    position: absolute;
 }
 
 .video-watch-button .icon::before {
@@ -724,12 +764,12 @@ header .navigation ul {
     top: 5px
 }
 
-.process-content.process-1-content p {
+.process-content.process-1-content {
     max-width: 330px
 }
 
-.process-content.process-2-content p {
-    width: 280px
+.process-content.process-2-content {
+    width: 280px;
 }
 
 .process-content.process-2-content p::before {
@@ -738,6 +778,11 @@ header .navigation ul {
 
 .process-content.process-3-content p {
     max-width: 300px
+}
+
+.process-3-content-rtl {
+
+    max-width: 217px;
 }
 
 .process-img-1 {
@@ -816,6 +861,14 @@ header .navigation ul {
     max-width: 437px
 }
 
+.working-content-rtl {
+    max-width: 440px;
+}
+
+.working-content-rtl p {
+    max-width: auto;
+}
+
 .working-card-area {
     position: relative;
     background-image: url(../images/working-bg.svg);
@@ -875,6 +928,11 @@ header .navigation ul {
     display: table-cell;
     padding-left: 22px;
     vertical-align: middle
+}
+
+.working-card .card-title[dir=rtl] .text {
+    padding-left: 0;
+    padding-right: 22px;
 }
 
 .working-card p {
@@ -974,6 +1032,22 @@ header .navigation ul {
     left: -10px
 }
 
+.blog-outline-content-rtl ul {
+    padding-left: 0;
+}
+
+.blog-outline-content-rtl ul li {
+    position: relative;
+    padding-right: 30px;
+}
+
+.blog-outline-content-rtl ul li::before {
+    left: unset;
+    right: 0;
+    position: absolute;
+    top: 5px;
+}
+
 .sec-products {
     background-image: url(../images/sec-products-bg.svg);
     background-repeat: no-repeat;
@@ -1050,6 +1124,11 @@ header .navigation ul {
     background-image: url(../images/arrow-right.svg)
 }
 
+.paraphrasing-content .accordion[dir=rtl] .accordion-button::after {
+    margin-left: unset;
+    margin-right: auto;
+}
+
 .paraphrasing-content .accordion .accordion-button:not(.collapsed)::after {
     transform: rotate(90deg)
 }
@@ -1068,6 +1147,11 @@ header .navigation ul {
     margin-right: 26px;
     transition: linear .2s;
     box-shadow: none
+}
+
+.paraphrasing-content .accordion[dir=rtl] .accordion-button .num {
+    margin-right: 0;
+    margin-left: 26px;
 }
 
 .paraphrasing-content .accordion .accordion-button .text {
@@ -1104,6 +1188,10 @@ header .navigation ul {
     position: relative;
     text-align: right;
     overflow: hidden;
+}
+
+.paraphrasing-img img {
+    width: 100%;
 }
 
 .paraphrasing-rocket {
@@ -1247,8 +1335,21 @@ header .navigation ul {
     transform: none
 }
 
+.testimonial-content-rtl #carouselTestimonial .carousel-control-next,
+.testimonial-content-rtl #carouselTestimonial .carousel-control-prev {
+    right: 60px;
+    left: auto;
+    bottom: 50px;
+    top: auto;
+    transform: none
+}
+
 #carouselTestimonial .carousel-control-prev {
     right: 104px
+}
+
+.testimonial-content-rtl #carouselTestimonial .carousel-control-prev {
+    right: 114px;
 }
 
 .sec-blog {
@@ -1321,7 +1422,7 @@ header .navigation ul {
     letter-spacing: .02em;
     color: #2d2d2de6;
     margin-bottom: 16px;
-    max-width: 430px
+    /* max-width: 430px */
 }
 
 .highlight-post a {
@@ -1337,7 +1438,7 @@ header .navigation ul {
     font-size: 14px;
     line-height: 174.5%;
     color: #2d2d2de6;
-    max-width: 391px
+    /* max-width: 391px */
 }
 
 .highlight-post a.btn-post {
@@ -1354,6 +1455,13 @@ header .navigation ul {
     bottom: 36px
 }
 
+.highlight-post a.btn-post[dir=rtl] {
+
+    left: 70px;
+
+    right: unset;
+}
+
 .highlight-post a.btn-post img {
     background: #fe7747;
     margin-left: 17px;
@@ -1363,6 +1471,12 @@ header .navigation ul {
     padding: 10px;
     border-radius: 30px;
     margin-bottom: 0
+}
+
+.highlight-post a.btn-post[dir=rtl] img {
+    transform: rotate(180deg);
+    margin-left: 0;
+    margin-right: 17px;
 }
 
 .post-card {
@@ -1414,6 +1528,12 @@ header .navigation ul {
     transition: linear .2s
 }
 
+.post-card a[dir=rtl] img {
+    margin-left: 0;
+    margin-right: 13px;
+    transform: rotate(180deg);
+}
+
 .post-card:hover a {
     color: #fe7747
 }
@@ -1457,6 +1577,11 @@ footer {
 .back-top-btn img {
     width: 20px
 }
+
+.footer-widget.footer-text {
+    max-width: 269px
+}
+
 .footer-widget h3 {
     font-weight: 500;
     font-size: 22px;
@@ -1495,6 +1620,10 @@ footer {
     color: #FF7A4D;
 }
 
+.footer-widget-rtl {
+    margin-right: 210px;
+}
+
 .footer-logo {
     margin-bottom: 15px
 }
@@ -1513,6 +1642,10 @@ footer {
     align-items: center;
     flex-wrap: nowrap;
     margin-bottom: 30px
+}
+
+.newsletter h3[dir=rtl] {
+    font-size: 21px;
 }
 
 .newsletter h3::before {
@@ -1537,6 +1670,16 @@ footer {
     background-position: center center;
     background-size: contain;
     margin-left: 44px
+}
+
+.newsletter h3[dir=rtl]::before {
+    margin-left: 17px;
+    margin-right: 0;
+}
+
+.newsletter h3[dir=rtl]::after {
+    margin-right: 44px;
+    margin-left: 0;
 }
 
 .newsletter form {
@@ -1580,6 +1723,16 @@ footer {
 
 .newsletter form button:hover {
     background-color: #006AB1;
+}
+
+.newsletter-rtl form input {
+    padding-right: 26px;
+    padding-left: 163px;
+}
+
+.newsletter-rtl form button {
+    left: 0;
+    right: unset;
 }
 
 .follow h3 {
@@ -1784,4 +1937,22 @@ footer {
     100% {
         transform: scale(1)
     }
+}
+
+
+/* some rtl css */
+html[lang=ar] .process-content p {
+    padding-right: 30px;
+    padding-left: 0;
+}
+
+html[lang=ar] .process-content p::before {
+    left: unset;
+    right: 0;
+}
+
+html[lang=ar] .btn-theme img {
+    transform: rotate(180deg);
+    margin-right: 50px;
+    margin-left: 0;
 }

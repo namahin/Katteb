@@ -44,6 +44,11 @@
         padding-bottom: 30px;
     }
 
+    .accout-btn-group {
+        display: block !important;
+        margin-bottom: 30px !important;
+    }
+
     .sb-list {
         padding: 8px !important;
         top: 30px;
@@ -264,6 +269,12 @@
         bottom: 50px;
     }
 
+    .testimonial-content-rtl #carouselTestimonial .carousel-control-next,
+    .testimonial-content-rtl #carouselTestimonial .carousel-control-prev {
+
+        bottom: 0;
+    }
+
     .sec-blog {
         padding-bottom: 100px;
     }
@@ -285,6 +296,10 @@
         margin: auto;
         margin-bottom: 50px;
         max-width: 460px;
+    }
+
+    .footer-widget.footer-text {
+        max-width: 100%;
     }
 }
 
@@ -435,6 +450,10 @@
         max-width: 400px;
         margin: auto;
     }
+
+    .footer-widget-rtl {
+        margin-right: 0;
+    }
 }
 
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
@@ -476,7 +495,7 @@
     .process-img-1 img,
     .process-img-2 img {
         max-width: 320px;
-        width: 320px;
+        width: 100%;
     }
 
     .blog-outline-img .img-2 {
